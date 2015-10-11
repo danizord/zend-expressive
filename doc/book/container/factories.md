@@ -2,7 +2,7 @@
 
 Expressive provides several factories compatible with container-interop to
 facilitate setting up common dependencies. The following is a list of provided
-containers, what they will create, the suggested service name, and any
+factories, what they will create, the suggested service name, and any
 additional dependencies they may require.
 
 All containers, unless noted otherwise, are in the `Zend\Expressive\Container`
@@ -16,7 +16,7 @@ namespace, and define an `__invoke()` method that accepts an
 - **Requires**: no additional services are required.
 - **Optional**:
     - `Zend\Expressive\Router\RouterInterface`. When provided, the service will
-      be used to construct the `Application` instance; otherwise, an Aura router
+      be used to construct the `Application` instance; otherwise, an FastRoute router
       implementation will be used.
     - `Zend\Expressive\FinalHandler`. This is a meta-service, as the only concrete
       type required is a callable that can be used as a final middleware in the
